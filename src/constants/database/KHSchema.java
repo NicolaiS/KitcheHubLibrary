@@ -1,5 +1,10 @@
 package constants.database;
 
+/**
+ * @author NicolaiSonne
+ * 
+ *         Schema basis
+ */
 public abstract class KHSchema {
 
 	protected static String TABLE_NAME;
@@ -17,6 +22,5 @@ public abstract class KHSchema {
 	protected static final String INTEGER_TYPE = " INTEGER";
 	protected static final String COMMA_SEP = ",";
 
-	public static final String SQL_DELETE = "DROP TABLE IF EXISTS "
-			+ TABLE_NAME;
+	public static final String SQL_DELETE = "DROP TABLE IF EXISTS " + TABLE_NAME;
 }

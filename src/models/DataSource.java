@@ -2,6 +2,12 @@ package models;
 
 import enums.EnumDataSourceType;
 
+/**
+ * 
+ * @author NicolaiSonne
+ *
+ *         Data Source model
+ */
 public class DataSource {
 
 	private Integer id;
@@ -12,15 +18,13 @@ public class DataSource {
 		this.id = id;
 	}
 
-	public DataSource(Integer id, String ipAddress,
-			EnumDataSourceType datasourceType) {
+	public DataSource(Integer id, String ipAddress, EnumDataSourceType datasourceType) {
 		this.id = id;
 		this.ipAddress = ipAddress;
 		this.datasourceType = datasourceType;
 	}
 
-	public DataSource(Integer id, String ipAddress, Integer datasourceTypeId)
-			throws Exception {
+	public DataSource(Integer id, String ipAddress, Integer datasourceTypeId) throws Exception {
 		this.id = id;
 		this.ipAddress = ipAddress;
 		this.datasourceType = EnumDataSourceType.enumFromId(datasourceTypeId);

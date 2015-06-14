@@ -3,6 +3,12 @@ package models;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 
+ * @author NicolaiSonne
+ *
+ *         Attribute Container model
+ */
 public class AttrContainer {
 
 	private Integer id;

@@ -2,6 +2,12 @@ package models;
 
 import enums.EnumContainerType;
 
+/**
+ * 
+ * @author NicolaiSonne
+ *
+ *         Container model
+ */
 public class Container {
 
 	private Integer id;

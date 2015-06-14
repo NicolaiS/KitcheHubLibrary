@@ -1,5 +1,11 @@
 package models;
 
+/**
+ * 
+ * @author NicolaiSonne
+ *
+ *         Attribute model
+ */
 public class Attribute {
 
 	private Integer id;
@@ -10,9 +16,7 @@ public class Attribute {
 	private String valueFormat;
 	private Integer sortOrder;
 
-	public Attribute(Integer id, String attrKey, String attrName,
-			String attrValue, Integer attrTypeId, String valueFormat,
-			Integer sortOrder) {
+	public Attribute(Integer id, String attrKey, String attrName, String attrValue, Integer attrTypeId, String valueFormat, Integer sortOrder) {
 		this.id = id;
 		this.attrKey = attrKey;
 		this.attrName = attrName;

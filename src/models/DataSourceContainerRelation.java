@@ -1,5 +1,11 @@
 package models;
 
+/**
+ * 
+ * @author NicolaiSonne
+ *
+ *         Data Source - Container relation
+ */
 public class DataSourceContainerRelation {
 
 	private Integer id;
@@ -7,16 +13,14 @@ public class DataSourceContainerRelation {
 	private Container container;
 	private Integer antenna;
 
-	public DataSourceContainerRelation(Integer id, DataSource datasource,
-			Container container, Integer antenna) {
+	public DataSourceContainerRelation(Integer id, DataSource datasource, Container container, Integer antenna) {
 		this.id = id;
 		this.datasource = datasource;
 		this.container = container;
 		this.antenna = antenna;
 	}
 
-	public DataSourceContainerRelation(Integer id, Integer datasourceId,
-			Integer containerId, Integer antenna) {
+	public DataSourceContainerRelation(Integer id, Integer datasourceId, Integer containerId, Integer antenna) {
 		this.id = id;
 		this.datasource = new DataSource(datasourceId);
 		this.container = new Container(containerId);

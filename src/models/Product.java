@@ -2,6 +2,13 @@ package models;
 
 import java.util.Date;
 
+/**
+ * 
+ * @author NicolaiSonne
+ *
+ *         Product Model
+ */
+
 public class Product {
 
 	private Integer id;
@@ -14,16 +21,13 @@ public class Product {
 	private Boolean present;
 	private Date lastEdit;
 
-	public Product(Integer id, Integer containerId, Integer indicator,
-			String companyPrefix, String itemRefNo, String serial,
-			Integer checksum, Boolean present, Long lastEdit) {
-		this(id, containerId, indicator, companyPrefix, itemRefNo, serial,
-				checksum, present, new Date(lastEdit));
+	public Product(Integer id, Integer containerId, Integer indicator, String companyPrefix, String itemRefNo, String serial, Integer checksum,
+			Boolean present, Long lastEdit) {
+		this(id, containerId, indicator, companyPrefix, itemRefNo, serial, checksum, present, new Date(lastEdit));
 	}
 
-	public Product(Integer id, Integer containerId, Integer indicator,
-			String companyPrefix, String itemRefNo, String serial,
-			Integer checksum, Boolean present, Date lastEdit) {
+	public Product(Integer id, Integer containerId, Integer indicator, String companyPrefix, String itemRefNo, String serial, Integer checksum,
+			Boolean present, Date lastEdit) {
 		this.id = id;
 		this.containerId = containerId;
 		this.indicator = indicator;

@@ -1,5 +1,11 @@
 package enums;
 
+/**
+ * 
+ * @author NicolaiSonne
+ *
+ *         Enumerator for types of Containers
+ */
 public enum EnumContainerType {
 
 	REFRIGERATED(1, "container_refrigerated"), FREEZER(2, "container_freezer"), LIVING_ROOM_TEMP(

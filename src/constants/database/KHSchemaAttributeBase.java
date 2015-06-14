@@ -4,6 +4,7 @@ package constants.database;
  * 
  * @author NicolaiSonne
  *
+ *         Base schema for attributes
  */
 public abstract class KHSchemaAttributeBase extends KHSchema {
 

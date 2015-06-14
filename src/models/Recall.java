@@ -2,6 +2,12 @@ package models;
 
 import java.util.Date;
 
+/**
+ * 
+ * @author NicolaiSonne
+ *
+ *         Recall Model
+ */
 public class Recall {
 
 	private Integer id = null;
@@ -14,9 +20,8 @@ public class Recall {
 	private Boolean accepted = null;
 	private Integer version = null;
 
-	public Recall(Integer id, String urn, String recall_serial, Date issueDate,
-			String description, String danger, String instructions,
-			Boolean accepted, Integer version) {
+	public Recall(Integer id, String urn, String recall_serial, Date issueDate, String description, String danger, String instructions, Boolean accepted,
+			Integer version) {
 		this.id = id;
 		this.urn = urn;
 		this.recall_serial = recall_serial;

@@ -4,6 +4,7 @@ package constants.database;
  * 
  * @author NicolaiSonne
  *
+ *         Schema for Product Info Meta
  */
 public class KHSchemaProductInfoMeta extends KHSchema {
 
@@ -12,11 +13,8 @@ public class KHSchemaProductInfoMeta extends KHSchema {
 	public static final String CN_VERSION = "version";
 
 	// @formatter:off
-	public static final String SQL_CREATE = "CREATE TABLE " + TABLE_NAME + " ("
-			+ CN_ID + INTEGER_TYPE + PK + COMMA_SEP
-			+ CN_URN + TEXT_TYPE + COMMA_SEP
-			+ CN_VERSION + INTEGER_TYPE
-			+ " )";
+	public static final String SQL_CREATE = "CREATE TABLE " + TABLE_NAME + " (" + CN_ID + INTEGER_TYPE + PK + COMMA_SEP + CN_URN + TEXT_TYPE + COMMA_SEP
+			+ CN_VERSION + INTEGER_TYPE + " )";
 	// @formatter:on
 
 	// A projection of all columns in the containers table.
